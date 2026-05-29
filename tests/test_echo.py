@@ -30,4 +30,4 @@ def test_post_request_200():
 def test_post_json_body():
     body = {'key': 'value'}
     response = requests.post(base_url_post, body)
-    assert response.json()["data"] == body
+    assert response.json()["form"] == body
